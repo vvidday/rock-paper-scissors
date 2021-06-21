@@ -1,0 +1,23 @@
+:root{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+h1{
+    text-align: center;
+}
+
+#play-game{
+    height: 5rem;
+    width: 10rem;
+    font-size: 1.8rem;
+}
+
+.play-game-container{
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+}

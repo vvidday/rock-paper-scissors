@@ -2,22 +2,108 @@
     font-size: 10px;
 }
 
+@media only screen and (max-width: 768px){
+    :root{
+        font-size: 8px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    :root{
+        font-size: 6px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+
 body{
     font-size: 1.6rem;
+    text-align: center; 
 }
+
 
 h1{
     text-align: center;
 }
 
-#play-game{
-    height: 5rem;
-    width: 10rem;
-    font-size: 1.8rem;
+.invisible{
+    display: none;
 }
 
 .play-game-container{
+    display: grid;
+    grid-template-columns: auto 20rem 10rem 20rem auto;
+    margin: 10rem 0;
+}
+
+#play-game{
+    grid-row: 1;
+    grid-column-start: 3;
+    font-size: 1.8rem;
+}
+
+
+#reset{
+    grid-row: 1;
+    grid-column-start: 3;
+    font-size: 1.8rem;
+}
+
+#player-score{
+    font-size: 4rem;
+    grid-row: 2;
+    grid-column-start: 2;
+}
+
+#computer-score{
+    font-size: 4rem;
+    grid-row: 2;
+    grid-column-start: 4;
+}
+
+#player-score-text{
+    font-size: 2rem;
+    grid-row: 1;
+    grid-column-start: 2;
+}
+
+#computer-score-text{
+    font-size: 2rem;
+    grid-row: 1;
+    grid-column-start: 4;
+}
+
+
+
+#result{
+    font-size: 3rem;
+}
+
+
+.options-container{
     display: flex;
     justify-content: center;
-    margin: 10rem 0;
+}
+
+.play-button{
+    margin: 5rem 5rem;
+    height: 5rem;
+    width: 10rem;
+    font-size: 2rem;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.results-text{
+    font-size: 2rem;
+    margin: 5rem 0;
 }

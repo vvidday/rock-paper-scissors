@@ -72,7 +72,7 @@ const executeRound = (playerSelection) => {
         playerWins++;
         playerScoreCounter.textContent = playerWins;
     }
-    else{
+    else if (result.includes("Lose")){
         computerWins++;
         computerScoreCounter.textContent = computerWins;
     }
